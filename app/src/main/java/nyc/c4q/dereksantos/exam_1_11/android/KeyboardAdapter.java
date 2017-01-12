@@ -1,4 +1,4 @@
-package nyc.c4q.dereksantos.exam_1_11;
+package nyc.c4q.dereksantos.exam_1_11.android;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -44,8 +44,8 @@ public class KeyboardAdapter extends RecyclerView.Adapter<LetterViewHolder> {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), LetterView.class);
-                intent.putExtra(LetterView.LETTER_URL, url);
+                Intent intent = new Intent(view.getContext(), LetterActivity.class);
+                intent.putExtra(LetterActivity.LETTER_URL_PARTIAL, url);
                 view.getContext().startActivity(intent);
             }
         };

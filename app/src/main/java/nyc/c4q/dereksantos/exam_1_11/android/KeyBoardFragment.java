@@ -1,4 +1,4 @@
-package nyc.c4q.dereksantos.exam_1_11;
+package nyc.c4q.dereksantos.exam_1_11.android;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
+import nyc.c4q.dereksantos.exam_1_11.R;
 import nyc.c4q.dereksantos.exam_1_11.backend.KeyboardApi;
 import nyc.c4q.dereksantos.exam_1_11.backend.KeyboardResponse;
 import nyc.c4q.dereksantos.exam_1_11.backend.Letter;
@@ -26,7 +27,7 @@ public class KeyBoardFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
+        View view = inflater.inflate(R.layout.fragment_keyboard, container, false);
 
         mRecyclerView = (RecyclerView) view.findViewById(R.id.keyboard_recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
